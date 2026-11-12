@@ -1,30 +1,28 @@
-# AI Agent & Automation Builds
+# About the Agentic System
 
-AI agents and automation projects built by **Warren Notrica** (Cal Poly, B.S. Information Systems & Analytics, CS + Statistics minors), developed during BUS 4498 (Agentic AI Development) using Claude Code, Codex, Supabase, and GitHub Pages.
+BUS 4498 Team Build
 
-**Live demo:** [warren-creates.github.io/BUS4498_InClass_Builds](https://warren-creates.github.io/BUS4498_InClass_Builds/)
+**Problem to be solved:** A local San Luis Obispo café is implementing a new online-ordering and point-of-sale system, but employees have different levels of technical confidence and receive inconsistent training. This can delay adoption, create order mistakes, and disrupt service; at the start of the rollout, only about 40% of employees may feel confident using the new system.
 
-## Projects
+## Team Charter
 
-### [Club Event Radar](event_radar/) — AI agent web app
-Club officers paste an announcement or flyer; an AI agent turns it into a structured event card, checks it against posting rules, and either publishes it or holds it for a human moderator.
+### Team Name
 
-- **Stack:** JavaScript front end on GitHub Pages; Supabase backend (Postgres, Auth, Storage, Edge Functions in TypeScript)
-- **Agent design:** retrieves context before deciding (club list, the club's earlier posts, and moderator-written "lessons" with on/off switches); a lesson can hold a post but never auto-publish one
-- **Engineering:** 8 versioned SQL migrations, moderator sign-in, flyer photo storage, nightly cleanup job, test logs with sample inputs and expected outcomes
-- **Security:** the AI API key lives in Supabase secrets, never in the repository
-- **AI-assisted development:** includes `AGENTS.md` / `CLAUDE.md` instructions for Claude Code and Codex, plus `HANDOFF.md` for teammates
+BridgeBuilders
 
-### [Hackathon Attendance Planning Agent](my_first_agent/) — agentic system design
-Designs an agent that forecasts real attendance for a campus AI hackathon (past events saw ~40% of registrants attend) and recommends food, drink, and swag quantities.
+### Team Members
 
-- Ten task specs, from loading and validating event data to presenting a forecast range for organizer review
-- Human-in-the-loop by design: no messages sent or supplies purchased without organizer approval, minimal personal data, and forecasts presented as ranges rather than certainties
+- Warren Notrica
+- Chloe Westberg
 
-### [Daily Email Outreach](daily-email-outreach/) — Claude skill
-A reusable skill that drafts (never sends) replies to incoming emails, flags deadlines and requested information, asks before including personal details, and compiles the day's drafts at 6 PM.
+### System Name
 
-## Tools
-Python · JavaScript · TypeScript · SQL · Supabase · GitHub Pages · Claude Code · Codex · MCP (Model Context Protocol)
+SLO ChangeBridge
 
-All clubs, events, and people in sample data are fictional.
+### System Goal
+
+Help a local San Luis Obispo café successfully implement its new online-ordering and point-of-sale system by creating role-specific training and communications, gathering employee feedback, identifying adoption concerns, and recommending timely change-management actions that improve employee confidence and reduce service disruptions.
+
+### Who Is Better Off When This Works?
+
+Employees and managers at the local San Luis Obispo café will be better off because they will receive clearer, role-relevant support while adopting the new digital system, resulting in smoother service and fewer order errors.
